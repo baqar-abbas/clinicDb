@@ -9,7 +9,7 @@ CREATE TABLE medical_histories (
     FOREIGN KEY (patient_id) REFERENCES patients (id)
 );
 
-/* Create table patient*/
+/* Create table patients*/
 CREATE TABLE patients(
     id serial primary key,
     name varchar(100),
@@ -22,7 +22,7 @@ CREATE TABLE treatments(
     type varchar(100),
     name varchar(100)
 );
-/* establish the many-to-many relationship between medical histories and treatments*/
+/* establish the many-to-many relationship between medical_histories and treatments*/
 
 CREATE TABLE medical_history_treatments (
     id serial primary key,
