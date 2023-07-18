@@ -42,7 +42,7 @@ CREATE TABLE invoices (
     medical_history_id int REFERENCES medical_histories (id)
 );
 
-/* Create table invoice items */
+/* Create table invoice items cceated one to many relation with invoices and treatments*/
 
 CREATE TABLE invoice_items (
     id serial primary key,
