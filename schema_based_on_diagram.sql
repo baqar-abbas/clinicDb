@@ -31,3 +31,24 @@ CREATE TABLE medical_history_treatments (
     FOREIGN KEY (medical_history_id) REFERENCES medical_histories (id),
     FOREIGN KEY (treatment_id) REFERENCES treatments (id)
 );
+
+/* Create table invoices and created reference to Medical histories (One to one relationship) */
+
+CREATE TABLE invoices (
+    id serial primary key,
+    total_amount decimal(10,2),
+    generated_at timestamp,
+    payed_at timestamp,
+    medical_history_id int REFERENCES medical_histories (id)
+);
+
+/* Create table invoice items */
+
+CREATE TABLE invoice_items (
+    id serial primary key,
+    unit_price decimal(10,2),
+    quantity int,
+    total_price decimal(10,2),
+    invoice_id int REFERENCES invoices (id),
+    treatment_id int REFERENCES treatments (id)
+);
