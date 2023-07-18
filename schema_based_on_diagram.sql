@@ -59,3 +59,10 @@ CREATE TABLE invoice_items (
     invoice_id int REFERENCES invoices (id),
     treatment_id int REFERENCES treatments (id)
 );
+
+CREATE INDEX idx_referencing_table_invoice_id ON invoices (id);
+CREATE INDEX idx_referencing_table_treatment_id ON treatments (id);
+CREATE INDEX idx_referencing_table_medical_history_id ON medical_histories(id);
+CREATE INDEX idx_referencing_table_treatment_id ON invoice_items (treatment_id);
+
+
