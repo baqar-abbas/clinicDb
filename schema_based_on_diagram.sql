@@ -9,12 +9,17 @@ CREATE TABLE medical_histories (
     FOREIGN KEY (patient_id) REFERENCES patients (id)
 );
 
+CREATE INDEX idx_patient_id ON medical_histories (patient_id);
+
 /* Create table patients*/
 CREATE TABLE patients(
     id serial primary key,
     name varchar(100),
     date_of_birth date
 );
+
+CREATE INDEX index_patients ON patients (id);
+
 
 /* Create table treatments*/
 CREATE TABLE treatments(
@@ -41,6 +46,8 @@ CREATE TABLE invoices (
     payed_at timestamp,
     medical_history_id int REFERENCES medical_histories (id)
 );
+
+CREATE INDEX idx_medical_id ON invoices (medical_history_id);
 
 /* Create table invoice items cceated one to many relation with invoices and treatments*/
 
