@@ -36,20 +36,6 @@ PostgreSQL
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
 <summary>Database</summary>
   <ul>
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
@@ -115,12 +101,11 @@ Open .sql files and copy queries paste it to run psql.sh
 - Twitter: [@twitterhandle](https://twitter.com/Binod_ironLad)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/binodbhusal)
 
-👤 **Author**
+👤 **Baqar Abbas**
 
-- GitHub: [@githubhandle](https://github.com/binodbhusal)
-- Twitter: [@twitterhandle](https://twitter.com/Binod_ironLad)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/binodbhusal)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- GitHub: [@Baqar](https://github.com/baqar-abbas)
+- Twitter: [@BaqarAbbas9](https://twitter.com/BaqarAbbas9)
+- LinkedIn: [Baqar Abbas](https://www.linkedin.com/in/baqar-abbas/)
 
 
 ## 🔭 Future Features <a name="future-features"></a>
